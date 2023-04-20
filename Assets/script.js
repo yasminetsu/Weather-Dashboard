@@ -1,10 +1,15 @@
 $(document).ready(function () {
     //search button feature
     $("#search-button").on("click", function () {
+      console.log("clicked!")
+
       //get value in input search-value.
       var searchTerm = $("#search-value").val();
+      console.log(searchTerm);
+
       //empty input field.
       $("#search-value").val("");
+      console.log(searchTerm);
       weatherFunction(searchTerm);
       weatherForecast(searchTerm);
     });
